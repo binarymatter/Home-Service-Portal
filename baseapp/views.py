@@ -45,7 +45,7 @@ def signup(request):
             form.save()
             user = form.cleaned_data.get('username')
             messages.success(request,'Account was created for '+ user )
-            return redirect('login')
+            return redirect('loginpage')
 
 
 
